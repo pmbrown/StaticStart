@@ -1,0 +1,90 @@
+//  ------------------------------------------------------------
+//  Button utilities
+//  ------------------------------------------------------------
+
+@if $enable-buttons {
+
+:where(.btn-xs) {
+  --fs: var(--xs);
+  --btn-pb: .2rem;
+  --btn-pi: .35rem;
+}
+
+:where(.btn-sm) {
+  --fs: var(--sm);
+  --btn-pb: .2rem;
+  --btn-pi: .5rem;
+}
+
+:where(.btn-lg) {
+  --fs: var(--h6);
+  --btn-pb: .35rem;
+  --btn-pi: .75rem;
+}
+
+:where(.btn-xl) {
+  --fs: var(--h5);
+  --btn-pb: .45rem;
+  --btn-pi: .85rem;
+}
+
+@if $enable-colors {
+
+[type=submit], .btn-blue {
+  --color: #fff;
+  --ico: var(--color);
+  --btn-bg: var(--blue);
+  --btn-hover: color-mix(in srgb, var(--blue) 75%, var(--body-bg));
+  --btn-border-color: color-mix(in srgb, var(--blue) 75%, var(--body-bg));
+  --input-focus-color: color-mix(in srgb, var(--blue) 90%, var(--body-bg));
+}
+
+[type=reset], .btn-red {
+  --color: #fff;
+  --ico: var(--color);
+  --btn-bg: var(--red);
+  --btn-hover: color-mix(in srgb, var(--red) 80%, var(--body-bg));
+  --btn-border-color: color-mix(in srgb, var(--red) 75%, var(--body-bg));
+  --input-focus-color: color-mix(in srgb, var(--red) 90%, var(--body-bg));
+}
+
+.btn-green {
+  --color: #fff;
+  --ico: var(--color);
+  --btn-bg: var(--green);
+  --btn-hover: color-mix(in srgb, var(--green) 75%, var(--body-bg));
+  --btn-border-color: color-mix(in srgb, var(--green) 75%, var(--body-bg));
+  --input-focus-color: color-mix(in srgb, var(--green) 90%, var(--body-bg));
+}
+
+.btn-orange {
+  --color: #000;
+  --ico: var(--color);
+  --btn-bg: var(--orange);
+  --btn-hover: color-mix(in srgb, var(--orange) 75%, var(--body-bg));
+  --btn-border-color: color-mix(in srgb, var(--orange) 75%, var(--body-bg));
+  --input-focus-color: color-mix(in srgb, var(--orange) 90%, var(--body-bg));
+}
+
+.btn-dark {
+  --color: #fff;
+  --ico: var(--color);
+  --btn-bg: var(--surf-1-dark);
+  --btn-hover: var(--surf-3-dark);
+  --btn-border-color: var(--surf-3-dark);
+  --input-focus-color: var(--surf-2-dark);
+}
+
+.btn-light {
+  --color: #000;
+  --ico: var(--color);
+  --btn-bg: var(--surf-1-light);
+  --btn-hover: var(--surf-2-light);
+  --btn-border-color: var(--surf-3-light);
+  --input-focus-color: var(--surf-2-light);
+}
+
+} // END [if/colors]
+
+} // END [if/buttons]
+

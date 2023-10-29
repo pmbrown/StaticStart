@@ -1,0 +1,84 @@
+//  ------------------------------------------------------------
+//  Variables
+//  ------------------------------------------------------------
+
+:where(html) {
+  @if $enable-colors {
+    @each $primary-colors, $value in $primary-colors {
+      --#{$primary-colors}: #{$value};       
+    }
+  }
+  
+  @each $light-scheme-colors, $value in $light-scheme-colors {
+    --#{$light-scheme-colors}: #{$value};       
+  }
+  
+  @each $dark-scheme-colors, $value in $dark-scheme-colors {
+    --#{$dark-scheme-colors}: #{$value};       
+  }
+}
+
+:where(html) {
+  @each $typography, $value in $typography {
+    --#{$typography}: #{$value};       
+  }
+  
+  @if $enable-forms-buttons {
+    @each $forms-buttons, $value in $forms-buttons {
+      --#{$forms-buttons}: #{$value};       
+    }
+  }
+  
+  @if $enable-tables {
+    @each $tables, $value in $tables {
+      --#{$tables}: #{$value};       
+    }
+  }
+  
+  @if $enable-icon-styles {
+    --ico: var(--color);
+    --ico-va: -.115em;
+  }
+}
+
+// Color-schemes
+
+:where(html) {
+  color-scheme: light;
+  @each $light-scheme, $value in $light-scheme {
+    --#{$light-scheme}: #{$value};       
+  }
+  @if $enable-theme-switch {
+    @if $enable-icon-styles {
+      @if $enable-icon-svg {
+        --mode-svg: var(--sun);
+      }
+    }
+  }
+}
+
+@if $enable-theme-switch {
+  :where([data-prefers-dark=true]) {
+    color-scheme: dark;
+    @each $dark-scheme, $value in $dark-scheme {
+      --#{$dark-scheme}: #{$value};       
+    }
+    @if $enable-theme-switch {
+      @if $enable-icon-styles {
+        @if $enable-icon-svg {
+          --mode-svg: var(--moon);
+        }
+      }
+    }
+  } 
+}
+@else {
+  @media (prefers-color-scheme: dark) {
+    :where(html) {
+      color-scheme: dark;
+      @each $dark-scheme, $value in $dark-scheme {
+        --#{$dark-scheme}: #{$value};
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+# ----------------------------------------------------------
+# Configuration
+# ----------------------------------------------------------
+baseURL = 'https://pmbrown.net/'
+languageCode = 'en-au'
+title = 'StaticStart'
+copyright = '2023 Phil Brown'
+publishDir = 'website'
+enableInlineShortcodes = true
+disableHugoGeneratorInject = true
+disableKinds = ['rss', 'sitemap']
+
+# ----------------------------------------------------------
+# Parameters
+# Edit CSS variables in config/_default/params.toml
+# Edit menus in config/_default/menus.toml
+# ----------------------------------------------------------
+[params]
+description = 'A blank, ready-to-build Hugo static website template with customisable CSS.'
+author = 'Phil Brown'
+email = "mailto:philbrown.webdev@gmail.com"
+twitter = "https://twitter.com/philbrownweb"
+mastodon = "https://techhub.social/@philbrown"
+github = "https://github.com/pmbrown"
+banner = "/banner.png"
+
+# ----------------------------------------------------------
+# Parameters: Include social metadata
+# ----------------------------------------------------------
+social_meta = 'false'
+
+# ----------------------------------------------------------
+# Parameters: RSS feed metadata also requires removing the 
+# 'rss' value from disableKinds above.
+# ----------------------------------------------------------
+rss_feed = 'false'  
+
+# ----------------------------------------------------------
+# Parameters: Scripts
+# Theme switch requires $enable-theme-switch set to true in
+# the assets/staticstart.scss document.
+# Menu and dialog scripts require js_footer set to true.
+# ----------------------------------------------------------
+theme_switch = 'true'  
+js_footer = 'true'
+js_menu = 'false'
+js_dialog = 'true'
+
+# ----------------------------------------------------------
+# Parameters: CSS output style preferences:
+# - Standard linked
+# - Minified linked
+# - Minified inline
+# ----------------------------------------------------------
+css = 'true'
+css_min = 'false'
+css_inline = 'false'
+
+# ----------------------------------------------------------
+# Taxonomy
+# ----------------------------------------------------------
+[taxonomies]
+#  tags = 'tags'
+
+# ----------------------------------------------------------
+# Markup
+# ----------------------------------------------------------
+[markup]
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    typographer = false  
+                 
+  [markup.goldmark.renderer]
+    unsafe = true        
+    
+  [markup.goldmark.parser]
+    autoHeadingID = false
+    
+  [markup.highlight]
+    noClasses = false
+
+# ----------------------------------------------------------
+# Minify
+# ----------------------------------------------------------
+[minify]
+  minifyOutput = false

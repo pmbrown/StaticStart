@@ -1,0 +1,115 @@
+//  ------------------------------------------------------------
+//  Properties
+//  Edit values in config/_default/params.toml
+//  ------------------------------------------------------------
+
+// Typography
+
+$typography: (
+  "color": var(--text),
+  "font": h.$font-family,
+  "fs": h.$font-size-page,
+  "body": h.$body,
+  "lg": h.$lg,
+  "lgr": h.$lgr,
+  "sm": h.$sm,
+  "sml": h.$sml,
+  "xs": h.$xs,
+  "h1": h.$h1,
+  "h2": h.$h2,
+  "h3": h.$h3,
+  "h4": h.$h4,
+  "h5": h.$h5,
+  "h6": h.$h6,
+  "lh-body": h.$lh-body,
+  "lh-header": h.$lh-header,
+  "lh-btn-forms": h.$lh-btn-forms,
+) !default;
+
+// Forms and buttons
+
+$forms-buttons: (
+  "btn-pb": h.$btn-pb,
+  "btn-pi": h.$btn-pi,
+  "btn-bg": h.$btn-bg,
+  "btn-hover": h.$btn-hover,
+  "btn-border": h.$btn-border,
+  "btn-border-color": h.$btn-border-color,
+  "btn-radius": h.$btn-radius,
+  "form-pb": h.$form-pb,
+  "form-pi": h.$form-pi,
+  "form-bg": h.$form-bg,
+  "form-border": h.$form-border,
+  "form-border-color": h.$form-border-color,
+  "form-radius": h.$form-radius,
+  "input-focus": h.$input-focus,
+  "input-focus-color": h.$input-focus-color,
+) !default;
+
+// Tables
+
+$tables: (
+  "table-thead-txt": h.$table-thead-txt,
+  "table-thead-bg": h.$table-thead-bg,
+  "table-hover": h.$table-hover,
+  "table-stripes": h.$table-stripes,
+  "table-border-color": h.$table-border-color,
+  "table-border-width": h.$table-border-width,
+  "table-pb": h.$table-pb,
+  "table-pi": h.$table-pi,
+  "table-mb": h.$table-mb,
+) !default;
+
+// Primary colors
+$primary-colors: (
+  "blue": h.$blue,
+  "red": h.$red,
+  "green": h.$green,
+  "orange": h.$orange,
+) !default;
+
+// Light scheme colors
+
+$light-scheme-colors: (
+  "text-light": h.$text-light,
+  "link-light": h.$link-light,
+  "link-hover-light": h.$link-hover-light,
+  "body-bg-light": h.$body-bg-light,
+  "surf-1-light": h.$surf-1-light,
+  "surf-2-light": h.$surf-2-light,
+  "surf-3-light": h.$surf-3-light,
+) !default;
+
+// Dark scheme colors
+
+$dark-scheme-colors: (
+  "text-dark": h.$text-dark,
+  "link-dark": h.$link-dark,
+  "link-hover-dark": h.$link-hover-dark,
+  "body-bg-dark": h.$body-bg-dark,
+  "surf-1-dark": h.$surf-1-dark,
+  "surf-2-dark": h.$surf-2-dark,
+  "surf-3-dark": h.$surf-3-dark,
+) !default;
+
+// Color schemes
+
+$light-scheme: (
+  "text": var(--text-light),
+  "link": var(--link-light),
+  "link-hover": var(--link-hover-light),
+  "body-bg": var(--body-bg-light),
+  "surf-1": var(--surf-1-light),
+  "surf-2": var(--surf-2-light),
+  "surf-3": var(--surf-3-light),
+) !default;
+
+$dark-scheme: (
+  "text": var(--text-dark),
+  "link": var(--link-dark),
+  "link-hover": var(--link-hover-dark),
+  "body-bg": var(--body-bg-dark),
+  "surf-1": var(--surf-1-dark),
+  "surf-2": var(--surf-2-dark),
+  "surf-3": var(--surf-3-dark),
+) !default;

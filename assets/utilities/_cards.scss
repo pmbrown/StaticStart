@@ -1,0 +1,49 @@
+//  ------------------------------------------------------------
+//  Cards
+//  ------------------------------------------------------------
+
+@if $enable-cards {
+
+.card, .card-link {
+  --card-pt: .75rem;
+  --card-pb: 1rem;
+  --card-pi: 1rem;
+  --card-bd: 1px solid var(--surf-3);
+  --card-bg: var(--surf-1);
+  position: relative;
+  max-width: var(--card-max-width); 
+  padding-block-start: var(--card-pt);
+  padding-block-end: var(--card-pb);
+  padding-inline: var(--card-pi);
+  border: var(--card-bd);
+  background-color: var(--card-bg);
+}
+
+:where(.card, .card-link) :last-child {
+  --mb: 0;
+}
+
+.card-link a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card-link :focus-visible {
+  outline: none;
+}
+
+.card-link:is(:focus-within, :hover) {
+  background-color: var(--surf-2);
+  cursor: pointer;
+}
+
+.card-link:focus-within {
+  outline: .188rem solid var(--surf-3);
+}
+
+} // END [if/cards]

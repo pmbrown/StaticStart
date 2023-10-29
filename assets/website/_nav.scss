@@ -1,0 +1,41 @@
+//  ------------------------------------------------------------
+//  Navbar
+//  ------------------------------------------------------------
+
+@if $enable-site-nav {
+
+[aria-controls="main-menu"] {
+  display: none;
+}
+
+// Breakpoints
+
+@media (max-width: #{$breakpoint-xl}) {
+
+}
+
+@media (max-width: #{$breakpoint-lg}) {
+
+}
+
+@media (max-width: #{$breakpoint-md}) {
+  [aria-controls="main-menu"] {
+    display: initial;
+    margin-inline-start: .5rem;
+  }
+  
+  [aria-expanded="false"][aria-controls] + #main-menu {
+    display: none;
+  }
+
+  [aria-expanded="true"][aria-controls] + #main-menu {
+    display: grid;
+    width: 100%;
+  }
+}
+
+@media (max-width: #{$breakpoint-sm}) {
+
+}
+
+} // END [@if]

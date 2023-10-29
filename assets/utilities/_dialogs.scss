@@ -1,0 +1,64 @@
+//  ------------------------------------------------------------
+//  Dialog
+//  ------------------------------------------------------------
+
+@if $enable-dialogs {
+
+dialog {
+  --dialog-max-width: 30rem;
+  margin: auto;
+  margin-block-start: 1rem;
+  width: calc((100% - 6px) - 2em);
+  max-width: var(--dialog-max-width); 
+  border: 1px solid var(--surf-2);
+  border-radius: .125em; 
+  background-color: var(--body-bg); 
+}
+
+dialog header {
+  --btn-pb: .15rem;
+  --btn-pi: .2rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  align-items: center;
+  margin-block-end: 1rem;
+}
+
+:where(dialog header) *:is(h1, h2, h3, h4, h5, h6, p) {
+  --mb: 0;
+}
+
+.dialog-body *:last-child {
+  --mb: 0;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  content: "";
+}
+
+::backdrop {
+  background: #00000099;
+}
+
+} // END [if/dialogs]
+
+//  Dialog HTML example 
+//  Uses icon styles and SVG for header close button.
+
+//  <button data-dialog="#dialog" aria-controls="dialog">Dialog</button>
+//  <dialog id="dialog">
+//    <header>
+//      <h2>Dialog header</h2>
+//      <button class="ico close" data-close><span class="vis-hidden">Close</span></button>
+//    </header>
+//    <div class="dialog-body">
+//      <p>Dialog body content</p>
+//      <button data-close>Close</button>
+//    </div>
+//    <div class="backdrop" data-close></div>
+//  </dialog>

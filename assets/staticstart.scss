@@ -1,0 +1,44 @@
+/*! StaticStart CSS v1.0. Copyright (c) 2023 Phil Brown. */
+
+// Styles and variables
+$enable-theme-switch:     true;
+$enable-forms-buttons:    true;
+$enable-tables:           true;
+$enable-colors:           true;
+
+// Utilities
+$enable-backgrounds:      true;
+$enable-borders:          true;
+$enable-buttons:          true;
+$enable-cards:            true;
+$enable-dialogs:          true;
+$enable-display:          true;
+$enable-gaps:             true;
+$enable-grid:             true;
+$enable-icon-styles:      true;
+$enable-icon-svg:         true;
+$enable-images:           true;
+$enable-spacing:          true;
+$enable-text:             true;
+
+// Website
+$enable-site-page:        true;
+$enable-site-banner:      false;
+$enable-site-nav:         false;
+$enable-site-main:        false;
+$enable-site-aside:       false;
+$enable-site-footer:      false;
+$enable-site-utility:     true;
+$enable-site-icons:       true;
+$enable-site-syntax:      false;
+
+// Enable Sass variables for params.toml
+@use "hugo:vars" as h;
+
+// Import and compile CSS
+@import "properties";
+@import "variables";
+@import "styles";
+@import "utilities";
+@import "website";
+
