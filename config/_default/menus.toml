@@ -4,6 +4,7 @@
 
 
 [[main]]
+  identifier = 'home'
   title = 'Home'
   url = '/'
   weight = -1

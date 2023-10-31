@@ -10,15 +10,15 @@
 
 // Breakpoints
 
-@media (max-width: #{$breakpoint-xl}) {
+@media (max-width: h.$breakpoint-xl) {
 
 }
 
-@media (max-width: #{$breakpoint-lg}) {
+@media (max-width: h.$breakpoint-lg) {
 
 }
 
-@media (max-width: #{$breakpoint-md}) {
+@media (max-width: h.$breakpoint-md) {
   [aria-controls="main-menu"] {
     display: initial;
     margin-inline-start: .5rem;
@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: #{$breakpoint-sm}) {
+@media (max-width: h.$breakpoint-sm) {
 
 }
 

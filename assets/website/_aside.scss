@@ -4,22 +4,21 @@
 
 @if $enable-site-aside {
 
-
 // Breakpoints
 
-@media (max-width: #{$breakpoint-xl}) {
+@media (max-width: h.$breakpoint-xl) {
 
 }
 
-@media (max-width: #{$breakpoint-lg}) {
+@media (max-width: h.$breakpoint-lg) {
 
 }
 
-@media (max-width: #{$breakpoint-md}) {
+@media (max-width: h.$breakpoint-md) {
 
 }
 
-@media (max-width: #{$breakpoint-sm}) {
+@media (max-width: h.$breakpoint-sm) {
 
 }
 

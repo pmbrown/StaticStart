@@ -85,3 +85,12 @@ body-bg-dark = '#232323'
 surf-1-dark = '#2e2e2e'
 surf-2-dark = '#3e3e3e'
 surf-3-dark = '#4e4e4e'
+
+# ---------------------------------------------------------- 
+# Website styles
+# ---------------------------------------------------------- 
+max-page-width = '50rem'
+breakpoint-xl = '1401px'
+breakpoint-lg = '1025px'
+breakpoint-md = '801px'
+breakpoint-sm = '480px'

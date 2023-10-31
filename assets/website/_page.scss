@@ -2,35 +2,29 @@
 //  Page
 //  ------------------------------------------------------------
 
-$page-width:        50rem;
-$breakpoint-xl:     1401px;
-$breakpoint-lg:     1025px;
-$breakpoint-md:     801px;
-$breakpoint-sm:     480px;
-
 @if $enable-site-page {
 
 body {
   margin-inline: auto;
-  max-inline-size: #{$page-width};
+  max-inline-size: h.$max-page-width;
   padding: 1rem;
 }
 
 // Breakpoints
 
-@media (max-width: #{$breakpoint-xl}) {
+@media (max-width: h.$breakpoint-xl) {
 
 }
 
-@media (max-width: #{$breakpoint-lg}) {
+@media (max-width: h.$breakpoint-lg) {
 
 }
 
-@media (max-width: #{$breakpoint-md}) {
+@media (max-width: h.$breakpoint-md) {
 
 }
 
-@media (max-width: #{$breakpoint-sm}) {
+@media (max-width: h.$breakpoint-sm) {
 
 }
 
