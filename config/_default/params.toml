@@ -4,6 +4,36 @@
 [style]
 
 # ---------------------------------------------------------- 
+# Primary colors
+# ---------------------------------------------------------- 
+blue = '#264d73'
+red = '#9a1d1d'
+green = '#2b6020'
+orange = '#ffc14d'
+
+# ---------------------------------------------------------- 
+# Light color-scheme
+# ---------------------------------------------------------- 
+text-light = '#343434'
+link-light = '#1c3db5'
+link-hover-light = 'color-mix(in srgb, var(--link) 60%, white)'
+body-bg-light = '#fcfefe'
+surf-1-light = '#efefef'
+surf-2-light = '#dfdfdf'
+surf-3-light = '#cfcfcf'
+
+# ---------------------------------------------------------- 
+# Dark color-scheme
+# ---------------------------------------------------------- 
+text-dark = '#fefefe'
+link-dark = '#9fbfdf'
+link-hover-dark = 'color-mix(in srgb, var(--link) 75%, white)'
+body-bg-dark = '#232323'
+surf-1-dark = '#2e2e2e'
+surf-2-dark = '#3e3e3e'
+surf-3-dark = '#4e4e4e'
+
+# ---------------------------------------------------------- 
 # Typography
 # ---------------------------------------------------------- 
 font_family = 'system-ui, -apple-system, Arial, Helvetica, sans-serif'
@@ -55,36 +85,6 @@ table-border-width = '0.0125rem'
 table-pb = '0.25rem'
 table-pi = '0.65rem'
 table-mb = '1rem'
-
-# ---------------------------------------------------------- 
-# Primary colors
-# ---------------------------------------------------------- 
-blue = '#264d73'
-red = '#9a1d1d'
-green = '#2b6020'
-orange = '#ffc14d'
-
-# ---------------------------------------------------------- 
-# Light color-scheme
-# ---------------------------------------------------------- 
-text-light = '#343434'
-link-light = '#1c3db5'
-link-hover-light = 'color-mix(in srgb, var(--link) 60%, white)'
-body-bg-light = '#fcfefe'
-surf-1-light = '#efefef'
-surf-2-light = '#dfdfdf'
-surf-3-light = '#cfcfcf'
-
-# ---------------------------------------------------------- 
-# Dark color-scheme
-# ---------------------------------------------------------- 
-text-dark = '#fefefe'
-link-dark = '#9fbfdf'
-link-hover-dark = 'color-mix(in srgb, var(--link) 75%, white)'
-body-bg-dark = '#232323'
-surf-1-dark = '#2e2e2e'
-surf-2-dark = '#3e3e3e'
-surf-3-dark = '#4e4e4e'
 
 # ---------------------------------------------------------- 
 # Website styles
