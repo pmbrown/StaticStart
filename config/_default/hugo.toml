@@ -11,50 +11,35 @@ disableHugoGeneratorInject = true
 disableKinds = ['rss', 'sitemap']
 
 # ----------------------------------------------------------
-# Parameters
-# Edit CSS variables in config/_default/params.toml
-# Edit menus in config/_default/menus.toml
+# Parameters (see params.toml for CSS parameters)
+# - rss_feed requires 'rss' removed from disableKinds above. 
+# - theme_switch also needs to be enabled in staticstart.scss.
+# - js_footer needs to be true for menu and/or dialog JS.
 # ----------------------------------------------------------
 [params]
-description = 'A blank, ready-to-build Hugo static website template with customisable CSS.'
-author = 'Phil Brown'
-email = "mailto:philbrown.webdev@gmail.com"
-twitter = "https://twitter.com/philbrownweb"
-mastodon = "https://techhub.social/@philbrown"
-github = "https://github.com/pmbrown"
-banner = "/banner.png"
+  description = 'A blank, ready-to-build Hugo static website template with customisable CSS.'
+  author = 'Phil Brown'
+  email = "mailto:philbrown.webdev@gmail.com"
+  twitter = "https://twitter.com/philbrownweb"
+  mastodon = "https://techhub.social/@philbrown"
+  github = "https://github.com/pmbrown"
+  banner = "/banner.png"
+  social_meta = 'false'
+  rss_feed = 'false'  
+  theme_switch = 'true'  
+  js_footer = 'true'
+  js_menu = 'false'
+  js_dialog = 'true'
 
 # ----------------------------------------------------------
-# Parameters: Include social metadata
+# Menus
 # ----------------------------------------------------------
-social_meta = 'false'
 
-# ----------------------------------------------------------
-# Parameters: RSS feed metadata also requires removing the 
-# 'rss' value from disableKinds above.
-# ----------------------------------------------------------
-rss_feed = 'false'  
-
-# ----------------------------------------------------------
-# Parameters: Scripts
-# Theme switch requires $enable-theme-switch set to true in
-# the assets/staticstart.scss document.
-# Menu and dialog scripts require js_footer set to true.
-# ----------------------------------------------------------
-theme_switch = 'true'  
-js_footer = 'true'
-js_menu = 'false'
-js_dialog = 'true'
-
-# ----------------------------------------------------------
-# Parameters: CSS output style preferences:
-# - Standard linked
-# - Minified linked
-# - Minified inline
-# ----------------------------------------------------------
-css = 'true'
-css_min = 'false'
-css_inline = 'false'
+[[menu.main]]
+  identifier = 'home'
+  name = 'home'
+  url = '/'
+  weight = 1
 
 # ----------------------------------------------------------
 # Taxonomy

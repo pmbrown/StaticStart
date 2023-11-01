@@ -1,5 +1,15 @@
 # ----------------------------------------------------------
-# Parameters: CSS variables
+# CSS output preferences:
+# - Standard linked
+# - Minified linked
+# - Minified inline
+# ---------------------------------------------------------- 
+css = 'true'
+css_min = 'false'
+css_inline = 'false'
+
+# ----------------------------------------------------------
+# Variables
 # ---------------------------------------------------------- 
 [style]
 
