@@ -4,6 +4,10 @@
 
 @if $enable-site-main {
 
+main {
+  min-width: 0;
+}
+
 // Breakpoints
 
 @media (max-width: h.$breakpoint-xl) {
