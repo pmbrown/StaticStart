@@ -63,9 +63,24 @@ $tables: (
 // Primary colors
 $primary-colors: (
   "blue": h.$blue,
+  "blue-hsl": h.$blue-hsl,
+  "blue-hs": h.$blue-hs,
   "red": h.$red,
+  "red-hsl": h.$red-hsl,
+  "red-hs": h.$red-hs,
   "green": h.$green,
+  "green-hsl": h.$green-hsl,
+  "green-hs": h.$green-hs,
   "orange": h.$orange,
+  "orange-hsl": h.$orange-hsl,
+  "orange-hs": h.$orange-hs,  
+) !default;
+
+// Box shadows
+$shadows: (
+  "shadow": h.$shadow,
+  "shadow-sm": h.$shadow-sm,
+  "shadow-lg": h.$shadow-lg,
 ) !default;
 
 // Light scheme colors

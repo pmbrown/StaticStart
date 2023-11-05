@@ -2,10 +2,10 @@
 //  Grid
 //  ------------------------------------------------------------
 
-$breakpoint-xl:     1401px;
-$breakpoint-lg:     1025px;
-$breakpoint-md:     801px;
-$breakpoint-sm:     480px;
+$breakpoint-xl:     h.$breakpoint-xl;
+$breakpoint-lg:     h.$breakpoint-lg;
+$breakpoint-md:     h.$breakpoint-md;
+$breakpoint-sm:     h.$breakpoint-sm;
 
 $fraction-grid: (
   "g-1": 100%,

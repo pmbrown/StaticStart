@@ -35,6 +35,12 @@
     }
   }
   
+  @if $enable-shadows {
+    @each $shadows, $value in $shadows {
+      --#{$shadows}: #{$value};       
+    }
+  }
+  
   @if $enable-icon-styles {
     --ico: var(--color);
     --ico-va: -.115em;

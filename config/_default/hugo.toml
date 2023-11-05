@@ -1,22 +1,23 @@
 # ----------------------------------------------------------
 # Configuration
 # ----------------------------------------------------------
-baseURL = 'https://pmbrown.net/'
-languageCode = 'en-au'
-title = 'StaticStart'
-copyright = '2023 Phil Brown'
-publishDir = 'website'
-enableInlineShortcodes = true
-disableHugoGeneratorInject = true
-disableKinds = ['rss', 'sitemap']
+  baseURL = 'https://pmbrown.net/'
+  languageCode = 'en-au'
+  title = 'StaticStart'
+  copyright = '2023 Phil Brown'
+  publishDir = 'website'
+  enableInlineShortcodes = true
+  disableHugoGeneratorInject = true
+  disableKinds = ['rss', 'sitemap']
 
 # ----------------------------------------------------------
 # Parameters (see params.toml for CSS parameters)
 # - rss_feed requires 'rss' removed from disableKinds above. 
 # - theme_switch also needs to be enabled in staticstart.scss.
-# - js_footer needs to be true for menu and/or dialog JS.
+# - js_footer needs to be true for js_menu and/or js_dialog.
 # ----------------------------------------------------------
-[params]
+  [params]
+  
   description = 'A blank, ready-to-build Hugo static website template with customisable CSS.'
   author = 'Phil Brown'
   email = "mailto:philbrown.webdev@gmail.com"
@@ -33,39 +34,43 @@ disableKinds = ['rss', 'sitemap']
 
 # ----------------------------------------------------------
 # Menus
-# ----------------------------------------------------------
+# ----------------------------------------------------------  
+  [[menu.main]]
+    identifier = 'home'
+    name = 'home'
+    url = '/'
+    weight = 1
 
-[[menu.main]]
-  identifier = 'home'
-  name = 'home'
-  url = '/'
-  weight = 1
-
 # ----------------------------------------------------------
-# Taxonomy
+# Taxonomy (disabled by default)
 # ----------------------------------------------------------
-[taxonomies]
-#  tags = 'tags'
+  [taxonomies]
+#   tags = 'tags'
 
 # ----------------------------------------------------------
 # Markup
+# - typographer disables curly quotes in summaries.
+# - unsafe allows writing HTML in MD documents.
+# - autoHeadingID disables TOC auto-IDs for MD headings.
+# - noClasses allows custom Chroma syntax highlighting.
 # ----------------------------------------------------------
-[markup]
-[markup.goldmark]
-  [markup.goldmark.extensions]
-    typographer = false  
-                 
-  [markup.goldmark.renderer]
-    unsafe = true        
-    
-  [markup.goldmark.parser]
-    autoHeadingID = false
-    
-  [markup.highlight]
-    noClasses = false
+  [markup]
+  
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      typographer = false  
+                   
+    [markup.goldmark.renderer]
+      unsafe = true        
+      
+    [markup.goldmark.parser]
+      autoHeadingID = false
+      
+    [markup.highlight]
+      noClasses = false
 
 # ----------------------------------------------------------
-# Minify
+# Minify HTML (see params.toml for CSS minify options)
 # ----------------------------------------------------------
-[minify]
-  minifyOutput = false
+  [minify]
+    minifyOutput = false

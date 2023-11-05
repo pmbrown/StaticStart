@@ -1,4 +1,4 @@
-/*! StaticStart CSS v1.0. Copyright (c) 2023 Phil Brown. */
+/*! StaticStart CSS v1.0.1 Copyright (c) 2023 Phil Brown. */
 
 // Styles and variables
 $enable-theme-switch:     true;
@@ -20,6 +20,7 @@ $enable-icon-svg:         true;
 $enable-images:           true;
 $enable-spacing:          true;
 $enable-text:             true;
+$enable-shadows:          true;
 
 // Website
 $enable-site-page:        true;
@@ -41,4 +42,3 @@ $enable-site-syntax:      false;
 @import "styles";
 @import "utilities";
 @import "website";
-

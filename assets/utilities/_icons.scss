@@ -20,9 +20,8 @@ $close:         url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentCo
 $newtab:        url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='m9 1-1 1h5l-6.51 6.51 0.998 0.998 6.51-6.51 0.00195 5 1-1-0.00195-4.99v-0.998zm-8 2 0.00781 12h12v-8h-1v7h-9.99l-0.00781-10h7v-1z'/></svg>");
 $pagelink:      url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='m1 2v12h10v-3h-1v2h-8v-10h8v2h1v-3h-10zm11 2 1.88 3.29-7.88 0.041v1.37h7.88l-1.88 3.3h1.67c0.877-1.58 1.56-2.66 2.33-4l-2.45-4h-1.55z'/></svg>");
 
-
-
 // Map
+// Use Sass // comments to disable unused icons.
 $icons: (
   "sun": $sun,
   "moon": $moon,

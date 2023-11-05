@@ -4,103 +4,121 @@
 # - Minified linked
 # - Minified inline
 # ---------------------------------------------------------- 
-css = 'true'
-css_min = 'false'
-css_inline = 'false'
+  css = 'true'
+  css_min = 'false'
+  css_inline = 'false'
 
 # ----------------------------------------------------------
-# Variables
+# CSS variables property values
 # ---------------------------------------------------------- 
-[style]
-
-# ---------------------------------------------------------- 
-# Primary colors
-# ---------------------------------------------------------- 
-blue = '#264d73'
-red = '#9a1d1d'
-green = '#2b6020'
-orange = '#ffc14d'
+  [style]
 
 # ---------------------------------------------------------- 
 # Light color-scheme
 # ---------------------------------------------------------- 
-text-light = '#343434'
-link-light = '#1c3db5'
-link-hover-light = 'color-mix(in srgb, var(--link) 60%, white)'
-body-bg-light = '#fcfefe'
-surf-1-light = '#efefef'
-surf-2-light = '#dfdfdf'
-surf-3-light = '#cfcfcf'
+  text-light = '#343434'
+  link-light = '#1c3db5'
+  link-hover-light = 'color-mix(in srgb, var(--link) 60%, white)'
+  body-bg-light = '#fcfefe'
+  surf-1-light = '#efefef'
+  surf-2-light = '#dfdfdf'
+  surf-3-light = '#cfcfcf'
 
 # ---------------------------------------------------------- 
 # Dark color-scheme
 # ---------------------------------------------------------- 
-text-dark = '#fefefe'
-link-dark = '#9fbfdf'
-link-hover-dark = 'color-mix(in srgb, var(--link) 75%, white)'
-body-bg-dark = '#232323'
-surf-1-dark = '#2e2e2e'
-surf-2-dark = '#3e3e3e'
-surf-3-dark = '#4e4e4e'
+  text-dark = '#fefefe'
+  link-dark = '#9fbfdf'
+  link-hover-dark = 'color-mix(in srgb, var(--link) 75%, white)'
+  body-bg-dark = '#232323'
+  surf-1-dark = '#2e2e2e'
+  surf-2-dark = '#3e3e3e'
+  surf-3-dark = '#4e4e4e'
+
+# ---------------------------------------------------------- 
+# Primary colors
+# The *-hsl values allow creating alpha channels, the *-hs
+# values allow creating tints/shades of primary colors.
+# ---------------------------------------------------------- 
+  blue = '#264d73'
+  blue-hsl = '210 50% 30%'
+  blue-hs = '210 50%'
+  red = '#9a1d1d'
+  red-hsl = '0 68% 36%'
+  red-hs = '0 68%'
+  green = '#2b6020'
+  green-hsl = '110 50% 25%'
+  green-hs = '110 50%'
+  orange = '#ffc14d'
+  orange-hsl = '39 100% 65%'
+  orange-hs = '39 100%'
+# ----------------------------------------------------------
 
 # ---------------------------------------------------------- 
 # Typography
 # ---------------------------------------------------------- 
-font_family = 'system-ui, -apple-system, Arial, Helvetica, sans-serif'
-font_size_page = 'clamp(100%, 40% + 0.666vw, 140%)'
-body = '1rem'
-lg = '1.1rem'
-lgr = '1.25rem'
-sm = '0.906rem'
-sml = '0.813rem'
-xs = '0.75rem'
-h1 = '2rem'
-h2 = '1.725rem'
-h3 = '1.5rem'
-h4 = '1.35rem'
-h5 = '1.2rem'
-h6 = '1.063rem'
-lh-body = '1.5'
-lh-header = '1.2'
-lh-btn-forms = '1.4'
+  font_family = 'system-ui, -apple-system, Arial, Helvetica, sans-serif'
+  font_size_page = 'clamp(100%, 40% + 0.666vw, 140%)'
+  body = '1rem'
+  lg = '1.1rem'
+  lgr = '1.25rem'
+  sm = '0.906rem'
+  sml = '0.813rem'
+  xs = '0.75rem'
+  h1 = '2rem'
+  h2 = '1.725rem'
+  h3 = '1.5rem'
+  h4 = '1.35rem'
+  h5 = '1.2rem'
+  h6 = '1.063rem'
+  lh-body = '1.5'
+  lh-header = '1.2'
+  lh-btn-forms = '1.4'
 
 # ---------------------------------------------------------- 
 # Buttons and forms
 # ---------------------------------------------------------- 
-btn-pb = '0.25rem'
-btn-pi = '0.5rem'
-btn-bg = 'var(--surf-1)'
-btn-hover = 'var(--surf-2)'
-btn-border = '1px'
-btn-border-color = 'var(--surf-2)'
-btn-radius = '0.125em'
-form-pb = '0.25rem'
-form-pi = '0.5rem'
-form-bg = 'var(--body-bg)'
-form-border = '1px'
-form-border-color = 'var(--surf-3)'
-form-radius = '0.125em'
-input-focus = '0 0 0 0.12rem'
-input-focus-color = 'var(--surf-3)'
+  btn-pb = '0.25rem'
+  btn-pi = '0.5rem'
+  btn-bg = 'var(--surf-1)'
+  btn-hover = 'var(--surf-2)'
+  btn-border = '1px'
+  btn-border-color = 'var(--surf-2)'
+  btn-radius = '0.125em'
+  form-pb = '0.25rem'
+  form-pi = '0.5rem'
+  form-bg = 'var(--body-bg)'
+  form-border = '1px'
+  form-border-color = 'var(--surf-3)'
+  form-radius = '0.125em'
+  input-focus = '0 0 0 0.12rem'
+  input-focus-color = 'var(--surf-3)'
 
 # ---------------------------------------------------------- 
 # Tables
 # ---------------------------------------------------------- 
-table-thead-txt = 'var(--text)'
-table-thead-bg = 'var(--surf-1)'
-table-hover = 'color-mix(in srgb, var(--table-thead-bg) 55%, var(--body-bg))'
-table-stripes = 'color-mix(in srgb, var(--table-thead-bg) 35%, var(--body-bg))'
-table-border-color = 'var(--surf-2)'
-table-border-width = '0.0125rem'
-table-pb = '0.25rem'
-table-pi = '0.65rem'
-table-mb = '1rem'
+  table-thead-txt = 'var(--text)'
+  table-thead-bg = 'var(--surf-1)'
+  table-hover = 'color-mix(in srgb, var(--table-thead-bg) 55%, var(--body-bg))'
+  table-stripes = 'color-mix(in srgb, var(--table-thead-bg) 35%, var(--body-bg))'
+  table-border-color = 'var(--surf-2)'
+  table-border-width = '0.0125rem'
+  table-pb = '0.25rem'
+  table-pi = '0.65rem'
+  table-mb = '1rem'
 
 # ---------------------------------------------------------- 
-# Website styles
+# Grid and page breakpoints (plus max-width if used)
 # ---------------------------------------------------------- 
-max-page-width = '50rem'
-breakpoint-xl = '1401px'
-breakpoint-lg = '1025px'
-breakpoint-md = '801px'
-breakpoint-sm = '480px'
+  max-page-width = '50rem'
+  breakpoint-xl = '1401px'
+  breakpoint-lg = '1025px'
+  breakpoint-md = '801px'
+  breakpoint-sm = '480px'
+
+# ---------------------------------------------------------- 
+# Box shadows
+# ---------------------------------------------------------- 
+  shadow-sm = '0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'
+  shadow = '0 0.25rem .75rem rgba(0, 0, 0, 0.15)'
+  shadow-lg = '0 0.5rem 1.25rem rgba(0, 0, 0, 0.15)'

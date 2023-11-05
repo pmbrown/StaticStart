@@ -6,6 +6,7 @@
 
 .auto, .passport, .landscape, .landscape-sm, .landscape-xs, .portrait {
   display: grid;
+  grid-template-columns: var(--gtc);
 }
 
 :where(.auto, .passport, .landscape, .landscape-sm, .landscape-xs, .portrait) img {
