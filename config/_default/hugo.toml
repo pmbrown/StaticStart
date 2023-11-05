@@ -5,7 +5,7 @@
   languageCode = 'en-au'
   title = 'StaticStart'
   copyright = '2023 Phil Brown'
-  publishDir = 'website'
+  publishDir = 'public'
   enableInlineShortcodes = true
   disableHugoGeneratorInject = true
   disableKinds = ['rss', 'sitemap']
