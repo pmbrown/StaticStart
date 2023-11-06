@@ -25,7 +25,7 @@
   mastodon = "https://mastodon.social/@authorname"
   github = "https://github.com/authorsname"
   banner = "/banner.png"
-  social_meta = 'true'
+  social_meta = 'false'
   rss_feed = 'false'  
   theme_switch = 'true'  
   js_footer = 'true'
