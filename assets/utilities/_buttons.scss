@@ -66,6 +66,15 @@
   --input-focus-color: color-mix(in srgb, var(--orange) 90%, var(--body-bg));
 }
 
+.btn-cyan {
+  --color: #000;
+  --ico: var(--color);
+  --btn-bg: var(--cyan);
+  --btn-hover: color-mix(in srgb, var(--cyan) 65%, var(--body-bg));
+  --btn-border-color: color-mix(in srgb, var(--cyan) 75%, var(--body-bg));
+  --input-focus-color: color-mix(in srgb, var(--cyan) 90%, var(--body-bg));
+}
+
 .btn-dark {
   --color: #fff;
   --ico: var(--color);

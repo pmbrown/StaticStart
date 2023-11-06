@@ -1,57 +1,61 @@
 # ----------------------------------------------------------
-# CSS output preferences:
-# - Standard linked
-# - Minified linked
-# - Minified inline
-# ---------------------------------------------------------- 
-  css = 'true'
-  css_min = 'false'
-  css_inline = 'false'
-
-# ----------------------------------------------------------
-# CSS variables property values
+# CSS variables
 # ---------------------------------------------------------- 
   [style]
 
 # ---------------------------------------------------------- 
-# Light color-scheme
+# Brand and theme
+# Change hue and saturation values to alter brand color and
+# theme color-schemes globally, adjust lightness values in
+# individual color-schemes below to suit.
+# ----------------------------------------------------------  
+  brand-hs = '40 99%'
+  theme-hs = '0 0%'
+
 # ---------------------------------------------------------- 
-  text-light = '#343434'
+# Light color-scheme
+# ----------------------------------------------------------
+  text-light = 'hsl(var(--theme-hs) 20%)'
   link-light = '#1c3db5'
   link-hover-light = 'color-mix(in srgb, var(--link) 60%, white)'
-  body-bg-light = '#fcfefe'
-  surf-1-light = '#efefef'
-  surf-2-light = '#dfdfdf'
-  surf-3-light = '#cfcfcf'
+  body-bg-light = 'hsl(var(--theme-hs) 99%)'
+  surf-1-light = 'hsl(var(--theme-hs) 94%)'
+  surf-2-light = 'hsl(var(--theme-hs) 87%)'
+  surf-3-light = 'hsl(var(--theme-hs) 81%)'
+  brand-light = 'hsl(var(--brand-hs) 42%)'
 
 # ---------------------------------------------------------- 
 # Dark color-scheme
 # ---------------------------------------------------------- 
-  text-dark = '#fefefe'
+  text-dark = 'hsl(var(--theme-hs) 99%)'
   link-dark = '#9fbfdf'
   link-hover-dark = 'color-mix(in srgb, var(--link) 75%, white)'
-  body-bg-dark = '#232323'
-  surf-1-dark = '#2e2e2e'
-  surf-2-dark = '#3e3e3e'
-  surf-3-dark = '#4e4e4e'
+  body-bg-dark = 'hsl(var(--theme-hs) 14%)'
+  surf-1-dark = 'hsl(var(--theme-hs) 18%)'
+  surf-2-dark = 'hsl(var(--theme-hs) 24%)'
+  surf-3-dark = 'hsl(var(--theme-hs) 31%)'
+  brand-dark = 'hsl(var(--brand-hs) 48%)'
 
 # ---------------------------------------------------------- 
 # Primary colors
-# The *-hsl values allow creating alpha channels, the *-hs
-# values allow creating tints/shades of primary colors.
+# Use *-hs values for tints/shades.
+# Use *-hsl values for alpha channels 
 # ---------------------------------------------------------- 
   blue = '#264d73'
-  blue-hsl = '210 50% 30%'
   blue-hs = '210 50%'
+  blue-hsl = 'var(--blue-hs) 30%'
   red = '#9a1d1d'
-  red-hsl = '0 68% 36%'
   red-hs = '0 68%'
+  red-hsl = 'var(--red-hs) 36%'
   green = '#2b6020'
-  green-hsl = '110 50% 25%'
   green-hs = '110 50%'
+  green-hsl = 'var(--green-hs) 25%'
   orange = '#ffc14d'
-  orange-hsl = '39 100% 65%'
   orange-hs = '39 100%'
+  orange-hsl = 'var(--orange-hs) 65%'
+  cyan = '#00e6e6'
+  cyan-hs = '180 100%'
+  cyan-hsl = 'var(--cyan-hs) 45%'
 # ----------------------------------------------------------
 
 # ---------------------------------------------------------- 

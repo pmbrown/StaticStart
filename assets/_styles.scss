@@ -44,6 +44,7 @@
   }
   color: var(--color);
   overflow-wrap: break-word;
+  text-decoration-color: color-mix(in srgb, var(--color) 75%, var(--body-bg));
   text-decoration-thickness: 1px;
   text-underline-offset: .1175em;
 }
@@ -60,6 +61,10 @@
   outline: .094rem solid var(--link-hover);
   outline-offset: .1175rem;
   border-radius: .15em;
+}
+
+:where(a:visited) {
+  text-decoration-color: color-mix(in srgb, var(--link) 50%, var(--body-bg));
 }
 
 :where(h1, h2, h3, h4, h5, h6) a {

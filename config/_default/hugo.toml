@@ -11,7 +11,7 @@
   disableKinds = ['rss', 'sitemap']
 
 # ----------------------------------------------------------
-# Parameters (see params.toml for CSS parameters)
+# Parameters (see params.toml for CSS variable parameters)
 # - rss_feed requires 'rss' removed from disableKinds above. 
 # - theme_switch also needs to be enabled in staticstart.scss.
 # - js_footer needs to be true for js_menu and/or js_dialog.
@@ -31,6 +31,9 @@
   js_footer = 'true'
   js_menu = 'false'
   js_dialog = 'true'
+  css_standard = 'true'
+  css_minify = 'false'
+  css_inline = 'false'
 
 # ----------------------------------------------------------
 # Menus

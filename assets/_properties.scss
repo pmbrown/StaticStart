@@ -3,6 +3,81 @@
 //  Edit values in config/_default/params.toml
 //  ------------------------------------------------------------
 
+// Primary colors
+$primary-colors: (
+  "blue": h.$blue,
+  "blue-hs": h.$blue-hs,
+  "blue-hsl": h.$blue-hsl,
+  "red": h.$red,
+  "red-hs": h.$red-hs,
+  "red-hsl": h.$red-hsl,
+  "green": h.$green,
+  "green-hs": h.$green-hs,
+  "green-hsl": h.$green-hsl,
+  "orange": h.$orange,
+  "orange-hs": h.$orange-hs,
+  "orange-hsl": h.$orange-hsl,  
+  "cyan": h.$cyan,
+  "cyan-hs": h.$cyan-hs,
+  "cyan-hsl": h.$cyan-hsl,
+) !default;
+
+// Brand and theme
+$theme-colors: (
+  "brand-hs": h.$brand-hs,
+  "theme-hs": h.$theme-hs,
+) !default;
+
+// Light scheme colors
+
+$light-scheme-colors: (
+  "text-light": h.$text-light,
+  "link-light": h.$link-light,
+  "link-hover-light": h.$link-hover-light,
+  "body-bg-light": h.$body-bg-light,
+  "surf-1-light": h.$surf-1-light,
+  "surf-2-light": h.$surf-2-light,
+  "surf-3-light": h.$surf-3-light,
+  "brand-light": h.$brand-light,
+) !default;
+
+// Dark scheme colors
+
+$dark-scheme-colors: (
+  "text-dark": h.$text-dark,
+  "link-dark": h.$link-dark,
+  "link-hover-dark": h.$link-hover-dark,
+  "body-bg-dark": h.$body-bg-dark,
+  "surf-1-dark": h.$surf-1-dark,
+  "surf-2-dark": h.$surf-2-dark,
+  "surf-3-dark": h.$surf-3-dark,
+  "brand-dark": h.$brand-dark,
+) !default;
+
+// Color schemes
+
+$light-scheme: (
+  "text": var(--text-light),
+  "link": var(--link-light),
+  "link-hover": var(--link-hover-light),
+  "body-bg": var(--body-bg-light),
+  "surf-1": var(--surf-1-light),
+  "surf-2": var(--surf-2-light),
+  "surf-3": var(--surf-3-light),
+  "brand": var(--brand-light),
+) !default;
+
+$dark-scheme: (
+  "text": var(--text-dark),
+  "link": var(--link-dark),
+  "link-hover": var(--link-hover-dark),
+  "body-bg": var(--body-bg-dark),
+  "surf-1": var(--surf-1-dark),
+  "surf-2": var(--surf-2-dark),
+  "surf-3": var(--surf-3-dark),
+  "brand": var(--brand-dark),
+) !default;
+
 // Typography
 
 $typography: (
@@ -60,71 +135,9 @@ $tables: (
   "table-mb": h.$table-mb,
 ) !default;
 
-// Primary colors
-$primary-colors: (
-  "blue": h.$blue,
-  "blue-hsl": h.$blue-hsl,
-  "blue-hs": h.$blue-hs,
-  "red": h.$red,
-  "red-hsl": h.$red-hsl,
-  "red-hs": h.$red-hs,
-  "green": h.$green,
-  "green-hsl": h.$green-hsl,
-  "green-hs": h.$green-hs,
-  "orange": h.$orange,
-  "orange-hsl": h.$orange-hsl,
-  "orange-hs": h.$orange-hs,  
-) !default;
-
 // Box shadows
 $shadows: (
   "shadow": h.$shadow,
   "shadow-sm": h.$shadow-sm,
   "shadow-lg": h.$shadow-lg,
-) !default;
-
-// Light scheme colors
-
-$light-scheme-colors: (
-  "text-light": h.$text-light,
-  "link-light": h.$link-light,
-  "link-hover-light": h.$link-hover-light,
-  "body-bg-light": h.$body-bg-light,
-  "surf-1-light": h.$surf-1-light,
-  "surf-2-light": h.$surf-2-light,
-  "surf-3-light": h.$surf-3-light,
-) !default;
-
-// Dark scheme colors
-
-$dark-scheme-colors: (
-  "text-dark": h.$text-dark,
-  "link-dark": h.$link-dark,
-  "link-hover-dark": h.$link-hover-dark,
-  "body-bg-dark": h.$body-bg-dark,
-  "surf-1-dark": h.$surf-1-dark,
-  "surf-2-dark": h.$surf-2-dark,
-  "surf-3-dark": h.$surf-3-dark,
-) !default;
-
-// Color schemes
-
-$light-scheme: (
-  "text": var(--text-light),
-  "link": var(--link-light),
-  "link-hover": var(--link-hover-light),
-  "body-bg": var(--body-bg-light),
-  "surf-1": var(--surf-1-light),
-  "surf-2": var(--surf-2-light),
-  "surf-3": var(--surf-3-light),
-) !default;
-
-$dark-scheme: (
-  "text": var(--text-dark),
-  "link": var(--link-dark),
-  "link-hover": var(--link-hover-dark),
-  "body-bg": var(--body-bg-dark),
-  "surf-1": var(--surf-1-dark),
-  "surf-2": var(--surf-2-dark),
-  "surf-3": var(--surf-3-dark),
 ) !default;

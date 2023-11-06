@@ -12,7 +12,7 @@
 @if $enable-backgrounds {
 
 @if $enable-colors {
-  :where(.surf-1-light, .surf-2-light, .surf-3-light, .surf-1-dark, .surf-2-dark, .surf-3-dark, .bg-blue, .bg-red, .bg-green, .bg-orange) {
+  :where(.surf-1-light, .surf-2-light, .surf-3-light, .surf-1-dark, .surf-2-dark, .surf-3-dark, .bg-blue, .bg-red, .bg-green, .bg-orange, .bg-cyan) {
     @include background-props;
   }
 }
@@ -97,6 +97,12 @@
     --bg: var(--orange);
     --bg-txt: #000;
     --bd-col: var(--orange);
+  }
+  
+  .bg-cyan {
+    --bg: var(--cyan);
+    --bg-txt: #000;
+    --bd-col: var(--cyan);
   }
 } // END [if/colors]
 

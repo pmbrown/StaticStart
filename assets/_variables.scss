@@ -3,10 +3,13 @@
 //  ------------------------------------------------------------
 
 :where(html) {
-  @if $enable-colors {
-    @each $primary-colors, $value in $primary-colors {
-      --#{$primary-colors}: #{$value};       
-    }
+
+  @each $typography, $value in $typography {
+    --#{$typography}: #{$value};       
+  }
+  
+  @each $theme-colors, $value in $theme-colors {
+    --#{$theme-colors}: #{$value};       
   }
   
   @each $light-scheme-colors, $value in $light-scheme-colors {
@@ -16,22 +19,22 @@
   @each $dark-scheme-colors, $value in $dark-scheme-colors {
     --#{$dark-scheme-colors}: #{$value};       
   }
-}
-
-:where(html) {
-  @each $typography, $value in $typography {
-    --#{$typography}: #{$value};       
-  }
   
   @if $enable-forms-buttons {
     @each $forms-buttons, $value in $forms-buttons {
       --#{$forms-buttons}: #{$value};       
     }
-  }
+  }  
   
   @if $enable-tables {
     @each $tables, $value in $tables {
       --#{$tables}: #{$value};       
+    }
+  }
+  
+  @if $enable-colors {
+    @each $primary-colors, $value in $primary-colors {
+      --#{$primary-colors}: #{$value};       
     }
   }
   
@@ -44,7 +47,7 @@
   @if $enable-icon-styles {
     --ico: var(--color);
     --ico-va: -.115em;
-  }
+  }  
 }
 
 // Color-schemes
@@ -57,7 +60,7 @@
   @if $enable-theme-switch {
     @if $enable-icon-styles {
       @if $enable-icon-svg {
-        --mode-svg: var(--sun);
+        --switch-ico: var(--sun);
       }
     }
   }
@@ -72,7 +75,7 @@
     @if $enable-theme-switch {
       @if $enable-icon-styles {
         @if $enable-icon-svg {
-          --mode-svg: var(--moon);
+          --switch-ico: var(--moon);
         }
       }
     }
