@@ -1,10 +1,10 @@
 # ----------------------------------------------------------
 # Configuration
 # ----------------------------------------------------------
-  baseURL = 'https://pmbrown.net/'
+  baseURL = 'https://example.com/'
   languageCode = 'en-au'
-  title = 'StaticStart'
-  copyright = '2023 Phil Brown'
+  title = 'Site Name'
+  copyright = '2023 Site Name'
   publishDir = 'public'
   enableInlineShortcodes = true
   disableHugoGeneratorInject = true
@@ -18,14 +18,14 @@
 # ----------------------------------------------------------
   [params]
   
-  description = 'A blank, ready-to-build Hugo static website template with customisable CSS.'
-  author = 'Phil Brown'
-  email = "mailto:philbrown.webdev@gmail.com"
-  twitter = "https://twitter.com/philbrownweb"
-  mastodon = "https://techhub.social/@philbrown"
-  github = "https://github.com/pmbrown"
+  description = 'StaticStart is a blank, ready-to-build Hugo static website template with customisable CSS.'
+  author = 'Author Name'
+  email = "mailto:author@example.com"
+  twitter = "https://twitter.com/authorname"
+  mastodon = "https://mastodon.social/@authorname"
+  github = "https://github.com/authorsname"
   banner = "/banner.png"
-  social_meta = 'false'
+  social_meta = 'true'
   rss_feed = 'false'  
   theme_switch = 'true'  
   js_footer = 'true'
