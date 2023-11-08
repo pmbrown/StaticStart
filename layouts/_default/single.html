@@ -1,15 +1,8 @@
 {{ define "main" }}
 <main id="main">
 <h1>{{ .Title }}</h1>
-<time datetime="{{ .Date | time.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+{{ partial "modules/date-posted.html" . }}
 {{ .Content }}
-{{ if .Params.tags -}}
-<dl class="taglist">
-<dt>Tags:</dt>
-{{- range (.GetTerms "tags") }}
-<dd><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></dd>
-{{- end }}
-</dl>
-{{ end -}}
+{{ partial "modules/tags-list-page.html" . -}}
 </main>
 {{ end }}

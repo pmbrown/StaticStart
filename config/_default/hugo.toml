@@ -2,7 +2,7 @@
 # Configuration
 # ----------------------------------------------------------
   baseURL = 'https://example.com/'
-  languageCode = 'en-au'
+  languageCode = 'en'
   title = 'Site Name'
   copyright = '2023 Site Name'
   publishDir = 'public'
@@ -42,13 +42,13 @@
     identifier = 'home'
     name = 'home'
     url = '/'
-    weight = 1
+    weight = -1
 
 # ----------------------------------------------------------
-# Taxonomy (disabled by default)
+# Taxonomy
 # ----------------------------------------------------------
   [taxonomies]
-#   tags = 'tags'
+    tags = 'tags'
 
 # ----------------------------------------------------------
 # Markup

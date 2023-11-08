@@ -4,6 +4,7 @@
 
 @if $enable-site-utility {
 
+// Skip to content <a>
 .skip:not(:focus):not(:focus-within) {
   position: absolute;
   width: 1px;
@@ -23,6 +24,61 @@
 .skip:hover {
   text-decoration: underline;
 }
+
+// Breadcrumbs <nav aria-label="Breadcrumbs">
+[aria-label="Breadcrumbs"] ul {
+  --pl: 0;
+  list-style: none;
+}
+
+[aria-label="Breadcrumbs"] li {
+  display: inline-block;
+}
+
+[aria-label="Breadcrumbs"] li:after {
+  content: " /";
+  margin-inline-start: .1rem;
+}
+
+[aria-label="Breadcrumbs"] li:last-child:after {
+  content: initial;
+}
+
+[aria-label="Breadcrumbs"] [aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+// Pagination <nav aria-label="Pagination">
+[aria-label="Pagination"] ul {
+  --pl: 0;
+  list-style: none;
+  display: flex;
+  column-gap: .5rem;
+}
+
+// Tags <ul> and <dl>
+.tags {
+  --pl: 0;
+}
+
+.tags * {
+  display: inline-block;
+}
+
+.tags dd {
+  margin-inline-start: 0;
+}
+
+.tags *:is(dd, li):after {
+  content: ", ";
+}
+
+.tags *:is(dd, li):last-child:after {
+  content: initial;
+}
+
 
 
 // Breakpoints

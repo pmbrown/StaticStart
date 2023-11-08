@@ -1,5 +1,4 @@
-
-<header class="flex between align-c mb pad-b bd-b">
-<a href="/"{{ if .IsHome }} aria-current="page"{{ end }} class="ico-b logo txt-c">{{ .Site.Title }}</a>
-<button id="themes" aria-pressed="false" class="btn-xs ico switch"><span class="vis-hidden">Theme switch</span></button>
+<header>
+<a href="/"{{ if .IsHome }} aria-current="page"{{ end }}>{{ .Site.Title }}</a>
+<button id="themes" aria-pressed="false" class="ico switch"><span class="vis-hidden">Theme switch</span></button>
 </header>

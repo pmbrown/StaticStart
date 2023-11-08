@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode | default "en-au" }}">
 {{- partial "head/head.html" . -}}
 <body>
-<a href="#main" class="skip">Skip to content</a>
+{{ partial "modules/skip.html" . }}
 {{ partial "banner.html" . -}}
 {{- block "main" . }}
 {{- end }}
