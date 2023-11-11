@@ -73,7 +73,7 @@
       noClasses = false
 
 # ----------------------------------------------------------
-# Minify HTML (see params.toml for CSS minify options)
+# Minify HTML
 # ----------------------------------------------------------
   [minify]
     minifyOutput = false

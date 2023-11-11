@@ -45,7 +45,8 @@ $icons: (
 
 :where(.ico):before, 
 :where(.ico-b):before, 
-:where(.ico-a):after {
+:where(.ico-a):after,
+:where(.ico-block):before {
   display: inline-block;
   background-color: var(--ico);
   content: "";
@@ -66,6 +67,13 @@ $icons: (
 :where(.ico-b):before {
   --ico-mr: calc(var(--fs) / 3.75);
   margin-inline-end: var(--ico-mr);
+}
+
+:where(.ico-block):before {
+  --ico-mb: .25rem;
+  display: block;
+  margin-inline: auto;
+  margin-block-end: var(--ico-mb);
 }
 
 } // END [if/icon-styles]

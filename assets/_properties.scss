@@ -64,6 +64,8 @@ $light-scheme: (
   "surf-1": var(--surf-1-light),
   "surf-2": var(--surf-2-light),
   "surf-3": var(--surf-3-light),
+  "mono-txt": #000,
+  "mono-bg": #fff,
   "brand": var(--brand-light),
 ) !default;
 
@@ -75,6 +77,8 @@ $dark-scheme: (
   "surf-1": var(--surf-1-dark),
   "surf-2": var(--surf-2-dark),
   "surf-3": var(--surf-3-dark),
+  "mono-txt": #fff,
+  "mono-bg": #000,
   "brand": var(--brand-dark),
 ) !default;
 
