@@ -14,7 +14,6 @@
 # Parameters (see params.toml for CSS variable parameters)
 # - rss_feed requires 'rss' removed from disableKinds above. 
 # - theme_switch also needs to be enabled in staticstart.scss.
-# - js_footer needs to be true for js_menu and/or js_dialog.
 # ----------------------------------------------------------
   [params]
   
@@ -27,8 +26,7 @@
   banner = "/banner.png"
   social_meta = 'false'
   rss_feed = 'false'  
-  theme_switch = 'true'  
-  js_footer = 'true'
+  theme_switch = 'true'
   js_menu = 'false'
   js_dialog = 'true'
   css_standard = 'true'

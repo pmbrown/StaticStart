@@ -1,4 +1,4 @@
-/*! StaticStart v1.0.4 Copyright (c) 2023 Phil Brown. Licensed under MIT (https://github.com/pmbrown/StaticStart/blob/main/LICENSE) */
+/*! StaticStart v1.0.5 Copyright (c) 2023 Phil Brown. Licensed under MIT (https://github.com/pmbrown/StaticStart/blob/main/LICENSE) */
 
 // Styles and variables
 $enable-theme-switch:     true;
@@ -29,8 +29,15 @@ $enable-site-nav:         false;
 $enable-site-main:        false;
 $enable-site-aside:       false;
 $enable-site-footer:      false;
-$enable-site-utility:     true;
-$enable-site-icons:       true;
+
+// Website utilities
+$enable-site-utility:     false;
+$enable-site-skip:        false;
+$enable-site-menu:        false;
+$enable-site-breadcrumbs: false;
+$enable-site-pagination:  false;
+$enable-site-tags:        false;
+$enable-site-icons:       false;
 $enable-site-syntax:      false;
 
 // Enable Sass variables for params.toml

@@ -4,20 +4,30 @@
 
 @if $enable-cards {
 
-.card-basic, .card-link {
+:where(html) {
+  --card-inline: 1rem;
   --card-pt: .75rem;
   --card-pb: 1rem;
-  --card-pi: 1rem;
-  --card-bd: 1px solid var(--surf-2);
+  --card-border-color: var(--surf-2);
+  --card-border-width: 1px;
+  --card-radius: .125em;
   --card-bg: color-mix(in srgb, var(--surf-1) 30%, var(--body-bg));
   --card-hover: color-mix(in srgb, var(--surf-1) 75%, var(--body-bg));
   --card-focus: .188rem solid var(--surf-3);
+  --card-title-txt: var(--text);
+  --card-title-bg: var(--surf-2);  
+  --card-title-block: .5rem;
+  --card-title-h-block: .75rem;  
+}
+
+.card-basic, .card-link {
   position: relative;
-  max-width: var(--card-max-width); 
+  max-inline-size: var(--card-max-width); 
   padding-block-start: var(--card-pt);
   padding-block-end: var(--card-pb);
-  padding-inline: var(--card-pi);
-  border: var(--card-bd);
+  padding-inline: var(--card-inline);
+  border: var(--card-border-width) solid var(--card-border-color);
+  border-radius: var(--card-radius);
   background-color: var(--card-bg);
 }
 
@@ -51,29 +61,15 @@
 // Cards with headers
 
 .card, .card-sm {
-  --card-txt: var(--text);
-  --card-title-txt: var(--text);
-  --card-title-bg: var(--surf-2);
-  --card-title-block: .5rem;
-  --card-title-header-block: .75rem;  
-  --card-body-block-start: .75rem;
-  --card-body-block-end: .9rem; 
-  --card-border-color: var(--surf-2);
-  --card-border-width: 1px;
-  --card-border-radius: .125em;
-  --card-inline: 1rem;
-  --card-width: 100%;
-  color: var(--card-txt);
-  width: var(--card-width);
-  max-width: var(--card-max-width);
+  max-inline-size: var(--card-max-width);
   background-color: var(--card-bg);
 }
 
 .card-sm {
   --card-inline: .75rem;
-  --card-title-header-block: .65rem;  
-  --card-body-block-start: .5rem;
-  --card-body-block-end: .75rem;
+  --card-title-h-block: .65rem;  
+  --card-pt: .5rem;
+  --card-pb: .75rem;
 }
 
 .card-sm * {
@@ -85,13 +81,13 @@
 }
 
 .card-title {
---ico-color: var(--card-title-txt);
+--ico: var(--card-title-txt);
   color: var(--card-title-txt);
   display: block;
   padding-block: var(--card-title-block);
   padding-inline: var(--card-inline);
-  border-start-start-radius: var(--card-border-radius);
-  border-start-end-radius: var(--card-border-radius);
+  border-start-start-radius: var(--card-radius);
+  border-start-end-radius: var(--card-radius);
   background-color: var(--card-title-bg);
 }
 
@@ -100,17 +96,17 @@
 }
 
 .card-title:is(h1, h2, h3, h4, h5, h6) {
-  padding-block: var(--card-title-header-block);
+  padding-block: var(--card-title-h-block);
 }
 
 .card-body {
-  padding-block-start: var(--card-body-block-start);
-  padding-block-end: var(--card-body-block-end);
+  padding-block-start: var(--card-pt);
+  padding-block-end: var(--card-pb);
   padding-inline: var(--card-inline);
   border: var(--card-border-width) solid var(--card-border-color);
   border-block-start: none;
-  border-end-start-radius: var(--card-border-radius);
-  border-end-end-radius: var(--card-border-radius);
+  border-end-start-radius: var(--card-radius);
+  border-end-end-radius: var(--card-radius);
 }
 
 .card-body :last-child {

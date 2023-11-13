@@ -38,6 +38,7 @@ $light-scheme-colors: (
   "surf-1-light": h.$surf-1-light,
   "surf-2-light": h.$surf-2-light,
   "surf-3-light": h.$surf-3-light,
+  "surf-4-light": h.$surf-4-light,
   "brand-light": h.$brand-light,
 ) !default;
 
@@ -51,6 +52,7 @@ $dark-scheme-colors: (
   "surf-1-dark": h.$surf-1-dark,
   "surf-2-dark": h.$surf-2-dark,
   "surf-3-dark": h.$surf-3-dark,
+  "surf-4-dark": h.$surf-4-dark,
   "brand-dark": h.$brand-dark,
 ) !default;
 
@@ -64,6 +66,7 @@ $light-scheme: (
   "surf-1": var(--surf-1-light),
   "surf-2": var(--surf-2-light),
   "surf-3": var(--surf-3-light),
+  "surf-4": var(--surf-4-light),
   "mono-txt": #000,
   "mono-bg": #fff,
   "brand": var(--brand-light),
@@ -77,6 +80,7 @@ $dark-scheme: (
   "surf-1": var(--surf-1-dark),
   "surf-2": var(--surf-2-dark),
   "surf-3": var(--surf-3-dark),
+  "surf-4": var(--surf-4-dark),
   "mono-txt": #fff,
   "mono-bg": #000,
   "brand": var(--brand-dark),

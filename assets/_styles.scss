@@ -72,13 +72,15 @@
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, ol, ul, dl, address) {
+  text-wrap: var(--tw);
   margin-block-end: var(--mb);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
   --fw: 700;
-  --mb: .75rem;
   --lh: var(--lh-header);
+  --tw: pretty;
+  --mb: .75rem;
 }
 
 :where(h1) {
@@ -117,8 +119,9 @@
 }
 
 :where(p, ol, ul, dl, address) {
+  --tw: pretty;
   --mb: 1rem;
-  line-height: var(--lh);  
+  line-height: var(--lh);
 }
 
 :where(ol, ul) {

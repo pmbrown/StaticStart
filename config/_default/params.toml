@@ -22,6 +22,7 @@
   surf-1-light = 'hsl(var(--theme-hs) 94%)'
   surf-2-light = 'hsl(var(--theme-hs) 87%)'
   surf-3-light = 'hsl(var(--theme-hs) 81%)'
+  surf-4-light = 'hsl(var(--theme-hs) 71%)'
   brand-light = 'hsl(var(--brand-hs) 42%)'
 
 # ---------------------------------------------------------- 
@@ -34,6 +35,7 @@
   surf-1-dark = 'hsl(var(--theme-hs) 18%)'
   surf-2-dark = 'hsl(var(--theme-hs) 24%)'
   surf-3-dark = 'hsl(var(--theme-hs) 31%)'
+  surf-4-dark = 'hsl(var(--theme-hs) 41%)'
   brand-dark = 'hsl(var(--brand-hs) 48%)'
 
 # ---------------------------------------------------------- 

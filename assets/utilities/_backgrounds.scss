@@ -12,12 +12,12 @@
 @if $enable-backgrounds {
 
 @if $enable-colors {
-  :where(.surf-1-light, .surf-2-light, .surf-3-light, .surf-1-dark, .surf-2-dark, .surf-3-dark, .bg-blue, .bg-red, .bg-green, .bg-orange, .bg-cyan) {
+  :where(.surf-1-light, .surf-2-light, .surf-3-light, .surf-4-light, .surf-1-dark, .surf-2-dark, .surf-3-dark, .surf-4-dark, .bg-blue, .bg-red, .bg-green, .bg-orange, .bg-cyan) {
     @include background-props;
   }
 }
 @else {
-  :where(.surf-1-light, .surf-2-light, .surf-3-light, .surf-1-dark, .surf-2-dark, .surf-3-dark) {
+  :where(.surf-1-light, .surf-2-light, .surf-3-light, .surf-4-light, .surf-1-dark, .surf-2-dark, .surf-3-dark, .surf-4-dark) {
     @include background-props;
   }
 }
@@ -38,6 +38,10 @@
   background-color: var(--surf-3);
 }
 
+.surf-4 {
+  background-color: var(--surf-4);
+}
+
 .surf-1-light {
   --bg: var(--surf-1-light);
   --bg-txt: #000;
@@ -56,6 +60,12 @@
   --bd-col: var(--surf-3-light);
 }
 
+.surf-4-light {
+  --bg: var(--surf-4-light);
+  --bg-txt: #000;
+  --bd-col: var(--surf-4-light);
+}
+
 .surf-1-dark {
   --bg: var(--surf-1-dark);
   --bg-txt: #fff;
@@ -72,6 +82,12 @@
   --bg: var(--surf-3-dark);
   --bg-txt: #fff;
   --bd-col: var(--surf-3-dark);
+}
+
+.surf-4-dark {
+  --bg: var(--surf-4-dark);
+  --bg-txt: #fff;
+  --bd-col: var(--surf-4-dark);
 }
 
 @if $enable-colors { 

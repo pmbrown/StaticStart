@@ -5,8 +5,8 @@
 @if $enable-site-page {
 
 body {
-  margin-inline: auto;
   max-inline-size: h.$max-page-width;
+  margin-inline: auto;
   padding: 1rem;
 }
 

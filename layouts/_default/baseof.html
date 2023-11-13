@@ -2,11 +2,10 @@
 <html lang="{{ .Site.LanguageCode | default "en-au" }}">
 {{- partial "head/head.html" . -}}
 <body>
-{{ partial "modules/skip.html" . }}
 {{ partial "banner.html" . -}}
 {{- block "main" . }}
 {{- end }}
-{{- partial "footer.html" . -}}
+{{- partial "footer.html" . }}
 {{- partial "js/js.html" . -}}
 </body>
 </html>

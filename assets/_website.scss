@@ -1,5 +1,5 @@
 //  ------------------------------------------------------------
-//  Website styles
+//  Website styles and utilities
 //  ------------------------------------------------------------
 
 @import "website/page";
@@ -8,6 +8,11 @@
 @import "website/main";
 @import "website/aside";
 @import "website/footer";
-@import "website/utility";
-@import "website/icons";
-@import "website/syntax";
+@import "website/utilities/utility";
+@import "website/utilities/skip";
+@import "website/utilities/menu";
+@import "website/utilities/breadcrumbs";
+@import "website/utilities/pagination";
+@import "website/utilities/tags";
+@import "website/utilities/icons";
+@import "website/utilities/syntax";

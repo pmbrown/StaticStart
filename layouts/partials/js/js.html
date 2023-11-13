@@ -1,1 +1,6 @@
-{{ if eq .Site.Params.js_footer "true" }}<script>{{ if eq .Site.Params.js_menu "true" }}{{ partialCached "js/menu.js" .  | safeJS }}{{ end }}{{ if eq .Site.Params.js_dialog "true" }}{{ partialCached "js/dialog.min.js" .  | safeJS }}{{ end }}</script>{{ end }}
+{{- if eq .Site.Params.js_menu "true" -}}
+<script>{{ partialCached "js/menu.js" .  | safeJS }}</script>
+{{ end -}}
+{{- if eq .Site.Params.js_dialog "true" -}}
+<script>{{ partialCached "js/dialog.min.js" .  | safeJS }}</script>
+{{- end }}
