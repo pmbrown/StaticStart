@@ -1,8 +1,8 @@
 {{ define "main" }}
 <main id="main">
 <h1>{{ .Title }}</h1>
-{{ partial "modules/date-posted.html" . }}
+{{ partial "components/date-posted.html" . }}
 {{ .Content }}
-{{ partial "modules/tags-list-page.html" . -}}
+{{ partial "components/tags-list-page.html" . -}}
 </main>
 {{ end }}

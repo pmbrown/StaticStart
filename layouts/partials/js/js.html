@@ -1,6 +1,0 @@
-{{- if eq .Site.Params.js_menu "true" -}}
-<script>{{ partialCached "js/menu.js" .  | safeJS }}</script>
-{{ end -}}
-{{- if eq .Site.Params.js_dialog "true" -}}
-<script>{{ partialCached "js/dialog.min.js" .  | safeJS }}</script>
-{{- end }}

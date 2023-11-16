@@ -1,5 +1,8 @@
-{{ if eq .Site.Params.theme_switch "true" }}
-<script>{{ partialCached "js/theme.min.js" .  | safeJS }}</script>{{ end }}
+{{- if eq .Site.Params.theme_switch "true" }}
+{{- with resources.Get "js/theme.min.js" }}
+<script>{{ .Content | safeJS }}</script>
+{{- end }}
+{{- end }}
 {{- partial "head/style.html" . -}}
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ "icon.png" | relURL }}" sizes="180x180" type="image/png">
