@@ -85,7 +85,7 @@
 # Buttons and forms
 # ---------------------------------------------------------- 
   btn-pb = '0.25rem'
-  btn-pi = '0.5rem'
+  btn-pi = '0.75rem'
   btn-bg = 'var(--surf-1)'
   btn-hover = 'var(--surf-2)'
   btn-border = '1px'

@@ -44,8 +44,9 @@ $icons: (
 @if $enable-icon-styles {
 
 :where(.ico):before, 
+:where(.ico-btn):before, 
 :where(.ico-b):before, 
-:where(.ico-a):after,
+:where(.ico-a):after, 
 :where(.ico-block):before {
   display: inline-block;
   background-color: var(--ico);
@@ -74,6 +75,11 @@ $icons: (
   display: block;
   margin-inline: auto;
   margin-block-end: var(--ico-mb);
+}
+
+:where(.ico-btn) {
+  --btn-pb: .25rem;
+  --btn-pi: .5rem;
 }
 
 } // END [if/icon-styles]
